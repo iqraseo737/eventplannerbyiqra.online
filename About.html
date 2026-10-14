@@ -1,1 +1,409 @@
-2
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#170e25">
+
+<title>About Us | Event Planner by Iqra - Islamabad</title>
+<meta name="description" content="Discover Event Planner by Iqra, offering elegant Nikaah, Mehndi, birthday, room and car decor, photography, videography and lighting in Islamabad, Rawalpindi and Bhara Kahu.">
+<link rel="canonical" href="https://eventplannerbyiqra.online/about.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+:root{
+--dark:#170e25;
+--purple:#382044;
+--gold:#d5b47b;
+--cream:#fcf8f3;
+--rose:#f3e6e8;
+--muted:#756e79;
+--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;background:var(--cream);color:var(--dark);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;width:100%;object-fit:cover}
+h1,h2,h3,h4{font-family:"Cormorant Garamond",serif}
+button{font:inherit;cursor:pointer}
+.container{width:min(1180px,90%);margin:auto}
+section{padding:100px 0}
+.tag{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#a17e4c;font-weight:700;margin-bottom:17px}
+.title{font-size:clamp(42px,5.5vw,70px);font-weight:600;line-height:1.05}
+.desc{color:var(--muted);font-size:14px;line-height:2;margin-top:22px}
+.center{text-align:center}
+.gold-line{width:65px;height:2px;background:var(--gold);margin:22px auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:16px 27px;border:1px solid var(--gold);font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;transition:.3s}
+.btn-gold{background:var(--gold);color:var(--dark)}
+.btn-gold:hover{background:#e8d09e;transform:translateY(-3px)}
+.btn-dark{background:var(--dark);color:white;border-color:var(--dark)}
+.btn-dark:hover{background:var(--purple)}
+.topbar{background:var(--dark);color:#e9dccc;padding:11px 0;font-size:11px}
+.topbar-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.topbar i{color:var(--gold);margin-right:7px}
+header{background:rgba(252,248,243,.98);position:sticky;top:0;z-index:1000;box-shadow:0 5px 25px #0000000c}
+.nav{height:87px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.brand{display:flex;align-items:center;gap:12px}
+.monogram{width:54px;height:54px;border:1px solid var(--gold);display:grid;place-items:center;font:600 27px "Cormorant Garamond",serif;position:relative}
+.monogram:after{content:"";position:absolute;inset:4px;border:1px solid #d5b47b80}
+.brand-name{font:700 25px "Cormorant Garamond",serif;line-height:.9}
+.brand-name span{display:block;font:500 9px "DM Sans",sans-serif;letter-spacing:3px;color:#a48659;margin-top:9px}
+.navlinks{display:flex;align-items:center;gap:28px;list-style:none}
+.navlinks a{font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.navlinks a:hover,.navlinks .active{color:#b18a52}
+.nav-book{background:var(--purple);color:white!important;padding:13px 18px}
+.menu-btn{display:none;background:none;border:0;font-size:25px}
+.page-hero{min-height:450px;background:linear-gradient(90deg,#170e25eb,#382044a8),url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=85") center/cover;display:flex;align-items:center;text-align:center;color:white}
+.page-hero h1{font-size:clamp(65px,9vw,110px);font-weight:500;line-height:1}
+.page-hero h1 em{color:var(--gold)}
+.page-hero p{font-size:13px;letter-spacing:3px;color:#e8d3b1;margin-top:25px}
+.story{background:white}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.story-photo{position:relative;padding:0 30px 30px 0}
+.story-photo img{height:590px}
+.story-photo:after{content:"";position:absolute;top:30px;left:30px;right:0;bottom:0;border:2px solid var(--gold);z-index:-1}
+.story-text p{color:var(--muted);font-size:14px;line-height:2.1;margin-top:23px}
+.signature{font:italic 33px "Cormorant Garamond",serif;color:#a98554;margin:25px 0}
+.values{background:#f3ece7}
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin-top:55px}
+.value-card{background:white;text-align:center;padding:50px 28px;transition:.3s}
+.value-card:hover{transform:translateY(-8px);box-shadow:0 15px 35px #00000012}
+.value-icon{width:75px;height:75px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;margin:0 auto 25px;color:#a8824d;font-size:27px}
+.value-card h3{font-size:32px;margin-bottom:13px}
+.value-card p{font-size:13px;line-height:1.9;color:var(--muted)}
+.quote{background:var(--dark);color:white;text-align:center}
+.quote h2{font-size:clamp(43px,6vw,76px);font-weight:400;max-width:900px;margin:auto}
+.quote em{color:var(--gold)}
+.quote p{color:#cdbed0;margin-top:25px;line-height:2}
+.experience-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.experience-grid img{height:520px}
+.experience-list{margin:30px 0;list-style:none}
+.experience-list li{display:flex;align-items:center;gap:15px;margin:19px 0;font-size:14px}
+.experience-list i{color:#ae8752}
+.areas{background:#f3ece7}
+.areas-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:45px}
+.area-card{background:white;text-align:center;padding:38px 20px;border-bottom:3px solid var(--gold)}
+.area-card i{font-size:30px;color:#aa8350}
+.area-card h3{font-size:32px;margin:15px 0 8px}
+.area-card p{font-size:12px;color:var(--muted)}
+.cta{background:linear-gradient(#170e25df,#170e25e8),url("https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1600&q=85") center/cover;color:white;text-align:center}
+.cta h2{font-size:clamp(46px,6vw,78px);margin:15px 0 22px}
+.cta p{color:#e3d8e6;line-height:2;margin-bottom:30px}
+footer{background:#140c1d;color:#d4c9d8;padding:75px 0 25px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1.5fr;gap:65px}
+.footer-logo{font:600 37px "Cormorant Garamond",serif;color:white}
+.footer-logo span{display:block;font:500 10px "DM Sans",sans-serif;letter-spacing:4px;color:var(--gold);margin-top:7px}
+footer p{font-size:13px;line-height:2;margin-top:20px}
+footer h3{font-size:26px;color:var(--gold);margin-bottom:23px}
+.footer-links{list-style:none}
+.footer-links li{margin:13px 0;font-size:13px}
+.footer-links a:hover{color:var(--gold)}
+.socials{display:flex;gap:12px;margin-top:20px}
+.socials a{width:40px;height:40px;border:1px solid #65516c;display:grid;place-items:center;color:var(--gold)}
+.socials a:hover{background:var(--gold);color:var(--dark)}
+.footer-bottom{border-top:1px solid #45364c;margin-top:55px;padding-top:25px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:11px;color:#aaa0ae}
+.floating{position:fixed;bottom:25px;right:22px;z-index:1100;display:flex;flex-direction:column;gap:12px}
+.floating a{width:55px;height:55px;border-radius:50%;display:grid;place-items:center;color:white;font-size:25px;box-shadow:0 5px 20px #0003}
+.float-wa{background:#25d366}
+.float-mail{background:var(--purple)}
+.reveal{opacity:0;transform:translateY(25px);transition:.7s}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:900px){
+.navlinks{gap:15px}
+.story-grid,.experience-grid{gap:35px}
+}
+@media(max-width:768px){
+section{padding:65px 0}
+.topbar-inner{justify-content:center;text-align:center}
+.nav{height:76px}
+.menu-btn{display:block}
+.navlinks{display:none;position:absolute;top:76px;left:0;width:100%;background:var(--cream);padding:25px 5%;flex-direction:column;align-items:stretch;box-shadow:0 15px 20px #0002}
+.navlinks.open{display:flex}
+.navlinks li{padding:8px 0}
+.story-grid,.experience-grid{grid-template-columns:1fr}
+.story-photo img,.experience-grid img{height:430px}
+.values-grid,.areas-grid{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr 1fr;gap:35px}
+.footer-grid>div:first-child{grid-column:span 2}
+}
+@media(max-width:480px){
+.brand-name{font-size:21px}
+.monogram{width:45px;height:45px}
+.page-hero{min-height:350px}
+.page-hero h1{font-size:65px}
+.footer-grid{grid-template-columns:1fr}
+.footer-grid>div:first-child{grid-column:auto}
+}
+@media(prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+.reveal{opacity:1;transform:none;transition:none}
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+ <div class="container topbar-inner">
+  <div><i class="fa-solid fa-location-dot"></i> Islamabad • Rawalpindi • Bhara Kahu</div>
+  <div>
+   <a href="tel:+923709909747"><i class="fa-solid fa-phone"></i> 0370 9909747</a>
+   &nbsp; | &nbsp;
+   <a href="mailto:eventplannerbyiqra@gmail.com"><i class="fa-solid fa-envelope"></i> Email Us</a>
+  </div>
+ </div>
+</div>
+
+<header>
+ <div class="container nav">
+  <a href="index.html" class="brand">
+   <div class="monogram">EI</div>
+   <div class="brand-name">Event Planner <br>by Iqra<span>THE ART OF CELEBRATION</span></div>
+  </a>
+
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+   <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <ul class="navlinks" id="navlinks">
+   <li><a href="index.html">Home</a></li>
+   <li><a href="about.html" class="active" aria-current="page">About</a></li>
+   <li><a href="services.html">Services</a></li>
+   <li><a href="blog.html">Blog</a></li>
+   <li><a href="contact.html">Contact</a></li>
+   <li><a href="contact.html" class="nav-book">Book Your Event</a></li>
+  </ul>
+ </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+ <div class="container">
+  <div class="tag" style="color:#e6c994">Discover Our Story</div>
+  <h1>About <em>Us</em></h1>
+  <p>HOME / ABOUT EVENT PLANNER BY IQRA</p>
+ </div>
+</section>
+
+<section class="story">
+ <div class="container story-grid">
+  <div class="story-photo reveal">
+   <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1000&q=85" alt="Elegant wedding decoration inspiration" loading="lazy">
+  </div>
+
+  <div class="story-text reveal">
+   <div class="tag">Welcome to Our World</div>
+   <h2 class="title">Every Celebration<br>Has a <em>Beautiful Story.</em></h2>
+
+   <p>Welcome to Event Planner by Iqra, where creativity, elegance and thoughtful details come together to make your special occasions memorable.</p>
+
+   <p>We believe every celebration is unique. Whether it's a graceful Nikaah ceremony, a colourful Mehndi celebration, a birthday surprise or a beautifully decorated room, every occasion deserves a personal touch.</p>
+
+   <p>Our focus is on transforming your ideas into beautiful event settings through carefully chosen colours, floral arrangements, lighting and decorative details.</p>
+
+   <p>Serving Islamabad, Rawalpindi and Bhara Kahu, we aim to bring style, warmth and unforgettable beauty to every event we create.</p>
+
+   <div class="signature">Creating Moments of Magic.</div>
+
+   <a href="contact.html" class="btn btn-dark">Plan With Us <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+ </div>
+</section>
+
+<section class="values">
+ <div class="container">
+  <div class="center reveal">
+   <div class="tag">What Makes Us Special</div>
+   <h2 class="title">Our Passion. Our Promise.</h2>
+   <div class="gold-line"></div>
+   <p class="desc">Thoughtful details and creative styling are at the heart of our approach.</p>
+  </div>
+
+  <div class="values-grid">
+   <div class="value-card reveal">
+    <div class="value-icon"><i class="fa-regular fa-gem"></i></div>
+    <h3>Elegant Design</h3>
+    <p>We love timeless colour palettes, beautiful decorations and refined details that make every celebration feel special.</p>
+   </div>
+
+   <div class="value-card reveal">
+    <div class="value-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+    <h3>Creative Vision</h3>
+    <p>Every event begins with an idea. We explore creative concepts that reflect your taste, occasion and preferred style.</p>
+   </div>
+
+   <div class="value-card reveal">
+    <div class="value-icon"><i class="fa-regular fa-heart"></i></div>
+    <h3>Personal Touch</h3>
+    <p>Your celebration is meaningful to you. We value your preferences and focus on making each setting feel personal.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="quote">
+ <div class="container reveal">
+  <div class="tag">Our Philosophy</div>
+  <h2>"The Most Beautiful Events Are Those That Become <em>Unforgettable Memories.</em>"</h2>
+  <p>Inspired by love, celebration, creativity and the joy of togetherness.</p>
+ </div>
+</section>
+
+<section>
+ <div class="container experience-grid">
+  <div class="reveal">
+   <div class="tag">What We Do</div>
+   <h2 class="title">From Your Vision<br>to a Beautiful Reality.</h2>
+   <p class="desc">We offer event styling and creative decoration services for different occasions, from intimate family gatherings to joyful celebrations.</p>
+
+   <ul class="experience-list">
+    <li><i class="fa-solid fa-check"></i> Elegant Room Decoration</li>
+    <li><i class="fa-solid fa-check"></i> Nikaah Stage Decoration</li>
+    <li><i class="fa-solid fa-check"></i> Colourful Mehndi Stage Decoration</li>
+    <li><i class="fa-solid fa-check"></i> Photography & Videography</li>
+    <li><i class="fa-solid fa-check"></i> Beautiful Home Lighting</li>
+    <li><i class="fa-solid fa-check"></i> Birthday Party Decoration</li>
+    <li><i class="fa-solid fa-check"></i> Wedding & Special Occasion Car Decor</li>
+   </ul>
+
+   <a href="services.html" class="btn btn-dark">Explore Our Services <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+
+  <div class="reveal">
+   <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1000&q=85" alt="Beautiful event decoration and lighting inspiration" loading="lazy">
+  </div>
+ </div>
+</section>
+
+<section class="areas">
+ <div class="container">
+  <div class="center reveal">
+   <div class="tag">Our Service Locations</div>
+   <h2 class="title">Celebrating With You Locally</h2>
+   <div class="gold-line"></div>
+   <p class="desc">Bringing event decoration and celebration styling to our local communities.</p>
+  </div>
+
+  <div class="areas-grid">
+   <div class="area-card reveal">
+    <i class="fa-solid fa-location-dot"></i>
+    <h3>Islamabad</h3>
+    <p>Event Styling & Decoration</p>
+   </div>
+   <div class="area-card reveal">
+    <i class="fa-solid fa-location-dot"></i>
+    <h3>Rawalpindi</h3>
+    <p>Special Occasion Decoration</p>
+   </div>
+   <div class="area-card reveal">
+    <i class="fa-solid fa-location-dot"></i>
+    <h3>Bhara Kahu</h3>
+    <p>Creative Celebration Services</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="cta">
+ <div class="container reveal">
+  <div class="tag" style="color:#e7c995">Let's Celebrate Together</div>
+  <h2>Your Dream Event Starts Here.</h2>
+  <p>Have an occasion coming up? Let's discuss your ideas and create something beautiful.</p>
+
+  <a href="https://wa.me/923431544775?text=Hello%20Event%20Planner%20by%20Iqra%2C%20I%20would%20like%20to%20plan%20an%20event." target="_blank" rel="noopener noreferrer" class="btn btn-gold">
+   <i class="fa-brands fa-whatsapp"></i> Book on WhatsApp
+  </a>
+ </div>
+</section>
+
+</main>
+
+<footer>
+ <div class="container">
+  <div class="footer-grid">
+   <div>
+    <div class="footer-logo">Event Planner by Iqra<span>THE ART OF CELEBRATION</span></div>
+    <p>Beautifully styled moments and unforgettable celebrations. Bringing creative event decoration and thoughtful details to Islamabad, Rawalpindi and Bhara Kahu.</p>
+
+    <div class="socials">
+     <a href="https://www.facebook.com/share/19YEWwUSfL/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+     <a href="https://www.instagram.com/event_planner_by_iqra/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+   </div>
+
+   <div>
+    <h3>Quick Links</h3>
+    <ul class="footer-links">
+     <li><a href="index.html">Home</a></li>
+     <li><a href="about.html">About Us</a></li>
+     <li><a href="services.html">Our Services</a></li>
+     <li><a href="blog.html">Blog</a></li>
+     <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+   </div>
+
+   <div>
+    <h3>Get In Touch</h3>
+    <p><i class="fa-solid fa-location-dot"></i> Islamabad • Rawalpindi • Bhara Kahu</p>
+    <p><i class="fa-solid fa-phone"></i> <a href="tel:+923709909747">0370 9909747</a></p>
+    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:eventplannerbyiqra@gmail.com">eventplannerbyiqra@gmail.com</a></p>
+    <p><i class="fa-solid fa-globe"></i> eventplannerbyiqra.online</p>
+   </div>
+  </div>
+
+  <div class="footer-bottom">
+   <div>© <span id="year"></span> Event Planner by Iqra. All Rights Reserved.</div>
+   <div>Made with Love & Elegance ✦</div>
+  </div>
+ </div>
+</footer>
+
+<div class="floating">
+ <a href="mailto:eventplannerbyiqra@gmail.com" class="float-mail" aria-label="Email Us" title="Email Us"><i class="fa-solid fa-envelope"></i></a>
+ <a href="https://wa.me/923431544775?text=Hello%20Event%20Planner%20by%20Iqra" class="float-wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Us" title="WhatsApp Us"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+
+<script>
+const menuBtn=document.getElementById("menuBtn");
+const navlinks=document.getElementById("navlinks");
+
+menuBtn.addEventListener("click",()=>{
+ const open=navlinks.classList.toggle("open");
+ menuBtn.setAttribute("aria-expanded",String(open));
+ menuBtn.querySelector("i").className=open?"fa-solid fa-xmark":"fa-solid fa-bars";
+});
+
+document.querySelectorAll(".navlinks a").forEach(link=>{
+ link.addEventListener("click",()=>{
+  navlinks.classList.remove("open");
+  menuBtn.setAttribute("aria-expanded","false");
+  menuBtn.querySelector("i").className="fa-solid fa-bars";
+ });
+});
+
+document.getElementById("year").textContent=new Date().getFullYear();
+
+if("IntersectionObserver" in window){
+ const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+   if(entry.isIntersecting){
+    entry.target.classList.add("visible");
+    observer.unobserve(entry.target);
+   }
+  });
+ },{threshold:.08});
+ document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+}else{
+ document.querySelectorAll(".reveal").forEach(el=>el.classList.add("visible"));
+}
+</script>
+
+</body>
+</html>
