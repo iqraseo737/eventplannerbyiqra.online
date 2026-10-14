@@ -1,1 +1,701 @@
-7
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#170e25">
+<title>Event Planning Blog | Event Planner by Iqra Islamabad</title>
+<meta name="description" content="Explore helpful Nikaah stage decoration, Mehndi decor, birthday styling, room decor, photography and wedding lighting guides for Islamabad and Rawalpindi.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://eventplannerbyiqra.online/blog.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Event Planning Inspiration | Event Planner by Iqra">
+<meta property="og:description" content="Practical event decoration ideas and inspiration for beautiful celebrations in Islamabad and Rawalpindi.">
+<meta property="og:url" content="https://eventplannerbyiqra.online/blog.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+:root{
+--dark:#170e25;--purple:#382044;--gold:#d5b47b;
+--cream:#fcf8f3;--muted:#756e79;--white:#fff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;background:var(--cream);color:var(--dark);overflow-x:hidden}
+h1,h2,h3,h4{font-family:"Cormorant Garamond",serif}
+a{text-decoration:none;color:inherit}
+img{display:block;width:100%;object-fit:cover}
+button,input{font:inherit}
+button{cursor:pointer}
+.container{width:min(1180px,90%);margin:auto}
+section{padding:85px 0}
+.tag{color:#a17e4c;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase}
+.title{font-size:clamp(42px,5.5vw,70px);line-height:1.08;font-weight:600}
+.desc{color:var(--muted);line-height:1.9;font-size:14px}
+.center{text-align:center}
+.gold-line{height:2px;width:65px;background:var(--gold);margin:22px auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 25px;background:var(--dark);color:white;border:1px solid var(--dark);font-size:11px;letter-spacing:1.4px;text-transform:uppercase;font-weight:700;transition:.3s}
+.btn:hover{background:var(--purple);transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:var(--dark);border-color:var(--gold)}
+.btn-gold:hover{background:#e8cf9d}
+.topbar{background:var(--dark);color:#e9dccc;padding:11px 0;font-size:11px}
+.topbar-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.topbar i{color:var(--gold);margin-right:7px}
+header{position:sticky;top:0;z-index:1000;background:rgba(252,248,243,.98);box-shadow:0 5px 25px #0000000c}
+.nav{height:87px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.brand{display:flex;align-items:center;gap:12px}
+.monogram{width:54px;height:54px;border:1px solid var(--gold);display:grid;place-items:center;font:600 27px "Cormorant Garamond",serif;position:relative}
+.monogram:after{content:"";position:absolute;inset:4px;border:1px solid #d5b47b80}
+.brand-name{font:700 25px "Cormorant Garamond",serif;line-height:.9}
+.brand-name span{display:block;font:500 9px "DM Sans",sans-serif;letter-spacing:3px;color:#a48659;margin-top:9px}
+.navlinks{display:flex;align-items:center;gap:28px;list-style:none}
+.navlinks a{font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.navlinks a:hover,.navlinks .active{color:#b18a52}
+.nav-book{background:var(--purple);color:white!important;padding:13px 18px}
+.menu-btn{display:none;background:none;border:0;font-size:25px}
+.page-hero{min-height:420px;background:linear-gradient(90deg,#170e25ed,#382044a8),url("https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1800&q=85") center/cover;display:flex;align-items:center;text-align:center;color:white}
+.page-hero h1{font-size:clamp(65px,9vw,110px);font-weight:500}
+.page-hero h1 em{color:var(--gold)}
+.page-hero p{letter-spacing:3px;font-size:12px;color:#e8d3b1;margin-top:20px}
+.blog-intro{background:white;text-align:center;padding:65px 0}
+.blog-intro .desc{max-width:750px;margin:20px auto}
+.filters{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin:0 auto 35px}
+.filter-btn{background:white;border:1px solid #e5d8ca;padding:12px 18px;font-size:11px;font-weight:700;letter-spacing:.6px;color:var(--dark);transition:.3s}
+.filter-btn.active,.filter-btn:hover{background:var(--purple);color:white;border-color:var(--purple)}
+.search-wrap{max-width:550px;margin:0 auto 45px;position:relative}
+.search-wrap input{width:100%;padding:17px 50px 17px 20px;border:1px solid #e2d6c8;background:white;outline:none}
+.search-wrap input:focus{border-color:var(--gold)}
+.search-wrap i{position:absolute;right:20px;top:19px;color:#a58454}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:27px}
+.blog-card{background:white;box-shadow:0 10px 30px #0000000c;overflow:hidden;transition:.3s}
+.blog-card:hover{transform:translateY(-7px);box-shadow:0 17px 35px #00000017}
+.blog-image{height:245px;overflow:hidden}
+.blog-image img{height:100%;transition:.5s}
+.blog-card:hover img{transform:scale(1.06)}
+.blog-content{padding:27px}
+.blog-category{color:#a17e4c;font-size:10px;letter-spacing:2px;font-weight:700}
+.blog-content h2{font-size:32px;line-height:1.15;margin:13px 0}
+.blog-content p{font-size:13px;line-height:1.9;color:var(--muted)}
+.blog-meta{font-size:11px;color:#8a7c85;margin:15px 0}
+.blog-meta i{color:#ae8b56;margin-right:5px}
+.read-more{display:inline-block;margin-top:22px;color:#9b7544;font-size:11px;font-weight:700;letter-spacing:1px;border:0;background:none}
+.read-more:hover{text-decoration:underline}
+.empty{display:none;text-align:center;padding:45px;color:var(--muted)}
+.article-view{display:none;background:white}
+.article-view.open{display:block}
+.article-layout{display:grid;grid-template-columns:minmax(0,780px) 280px;gap:55px;align-items:start}
+.article-header h1{font-size:clamp(43px,5vw,67px);line-height:1.07;margin:16px 0}
+.article-hero{height:410px;margin:30px 0}
+.article-body{font-size:15px;line-height:2;color:#514b55}
+.article-body h2{font-size:38px;color:var(--dark);line-height:1.15;margin:37px 0 13px}
+.article-body h3{font-size:29px;color:var(--dark);margin:27px 0 12px}
+.article-body p{margin-bottom:20px}
+.article-body ul,.article-body ol{padding-left:25px;margin:15px 0 25px}
+.article-body li{margin-bottom:10px}
+.article-body strong{color:var(--dark)}
+.article-body blockquote{border-left:3px solid var(--gold);padding:20px 25px;background:var(--cream);font:italic 26px "Cormorant Garamond",serif;margin:30px 0;color:var(--purple)}
+.article-body img{height:350px;margin:25px 0}
+.article-side{position:sticky;top:110px}
+.side-box{padding:30px;background:var(--cream);margin-bottom:25px}
+.side-box h3{font-size:29px;margin-bottom:15px}
+.side-box p{font-size:13px;color:var(--muted);line-height:1.9;margin-bottom:20px}
+.side-box a{font-size:12px;line-height:2}
+.side-box a:hover{color:#a17e4c}
+.back-btn{border:0;background:transparent;color:#a17e4c;font-size:12px;font-weight:700;letter-spacing:1px;margin-bottom:25px}
+.article-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:40px;padding-top:25px;border-top:1px solid #eee}
+.cta{background:linear-gradient(#170e25df,#170e25e8),url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=85") center/cover;text-align:center;color:white}
+.cta h2{font-size:clamp(45px,6vw,75px);margin:15px 0 25px}
+.cta p{color:#e3d8e6;line-height:2;margin-bottom:30px}
+footer{background:#140c1d;color:#d4c9d8;padding:75px 0 25px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1.5fr;gap:65px}
+.footer-logo{font:600 37px "Cormorant Garamond",serif;color:white}
+.footer-logo span{display:block;font:500 10px "DM Sans",sans-serif;letter-spacing:4px;color:var(--gold);margin-top:7px}
+footer p{font-size:13px;line-height:2;margin-top:20px}
+footer h3{font-size:26px;color:var(--gold);margin-bottom:23px}
+.footer-links{list-style:none}
+.footer-links li{margin:13px 0;font-size:13px}
+.footer-links a:hover{color:var(--gold)}
+.socials{display:flex;gap:12px;margin-top:20px}
+.socials a{width:40px;height:40px;border:1px solid #65516c;display:grid;place-items:center;color:var(--gold)}
+.socials a:hover{background:var(--gold);color:var(--dark)}
+.footer-bottom{border-top:1px solid #45364c;margin-top:55px;padding-top:25px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:11px;color:#aaa0ae}
+.floating{position:fixed;bottom:25px;right:22px;z-index:1100;display:flex;flex-direction:column;gap:12px}
+.floating a{width:55px;height:55px;border-radius:50%;display:grid;place-items:center;color:white;font-size:25px;box-shadow:0 5px 20px #0003}
+.float-wa{background:#25d366}
+.float-mail{background:var(--purple)}
+@media(max-width:1050px){
+.navlinks{gap:15px}
+.article-layout{grid-template-columns:1fr}
+.article-side{position:static}
+.blog-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+section{padding:60px 0}
+.topbar-inner{justify-content:center;text-align:center}
+.nav{height:76px}
+.menu-btn{display:block}
+.navlinks{display:none;position:absolute;top:76px;left:0;width:100%;background:var(--cream);padding:25px 5%;flex-direction:column;align-items:stretch;box-shadow:0 15px 20px #0002}
+.navlinks.open{display:flex}
+.navlinks li{padding:8px 0}
+.blog-grid{grid-template-columns:1fr}
+.blog-image{height:260px}
+.article-hero{height:260px}
+.article-body img{height:240px}
+.footer-grid{grid-template-columns:1fr 1fr;gap:35px}
+.footer-grid>div:first-child{grid-column:span 2}
+}
+@media(max-width:480px){
+.brand-name{font-size:21px}
+.monogram{width:45px;height:45px}
+.page-hero{min-height:330px}
+.page-hero h1{font-size:65px}
+.footer-grid{grid-template-columns:1fr}
+.footer-grid>div:first-child{grid-column:auto}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+ <div class="container topbar-inner">
+  <div><i class="fa-solid fa-location-dot"></i> Islamabad • Rawalpindi • Bhara Kahu</div>
+  <div>
+   <a href="tel:+923709909747"><i class="fa-solid fa-phone"></i> 0370 9909747</a>
+   &nbsp; | &nbsp;
+   <a href="mailto:eventplannerbyiqra@gmail.com"><i class="fa-solid fa-envelope"></i> Email Us</a>
+  </div>
+ </div>
+</div>
+
+<header>
+ <div class="container nav">
+  <a href="index.html" class="brand">
+   <div class="monogram">EI</div>
+   <div class="brand-name">Event Planner <br>by Iqra<span>THE ART OF CELEBRATION</span></div>
+  </a>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+   <i class="fa-solid fa-bars"></i>
+  </button>
+  <ul class="navlinks" id="navlinks">
+   <li><a href="index.html">Home</a></li>
+   <li><a href="about.html">About</a></li>
+   <li><a href="services.html">Services</a></li>
+   <li><a href="blog.html" class="active" aria-current="page">Blog</a></li>
+   <li><a href="contact.html">Contact</a></li>
+   <li><a href="contact.html" class="nav-book">Book Your Event</a></li>
+  </ul>
+ </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+ <div class="container">
+  <div class="tag" style="color:#e6c994">Ideas • Inspiration • Celebrations</div>
+  <h1>Our <em>Journal</em></h1>
+  <p>HOME / BLOG & INSPIRATION</p>
+ </div>
+</section>
+
+<div id="blogListing">
+<section class="blog-intro">
+ <div class="container">
+  <div class="tag">The Celebration Journal</div>
+  <h2 class="title">Beautiful Ideas for<br>Unforgettable Moments</h2>
+  <div class="gold-line"></div>
+  <p class="desc">Explore practical event planning tips, elegant decoration inspiration and creative celebration ideas for Islamabad, Rawalpindi and beyond.</p>
+ </div>
+</section>
+
+<section>
+ <div class="container">
+  <div class="filters" id="filters">
+   <button class="filter-btn active" data-category="All">All Articles</button>
+   <button class="filter-btn" data-category="Wedding">Wedding</button>
+   <button class="filter-btn" data-category="Mehndi">Mehndi</button>
+   <button class="filter-btn" data-category="Birthday">Birthday</button>
+   <button class="filter-btn" data-category="Decoration">Decoration</button>
+   <button class="filter-btn" data-category="Photography">Photography</button>
+  </div>
+  <div class="search-wrap">
+   <input type="search" id="blogSearch" placeholder="Search articles..." aria-label="Search blog articles">
+   <i class="fa-solid fa-magnifying-glass"></i>
+  </div>
+  <div class="blog-grid" id="blogGrid"></div>
+  <p class="empty" id="emptyMessage">No articles found. Try another search.</p>
+ </div>
+</section>
+</div>
+
+<section class="article-view" id="articleView">
+ <div class="container">
+  <button class="back-btn" id="backBtn"><i class="fa-solid fa-arrow-left"></i> BACK TO ALL ARTICLES</button>
+  <div class="article-layout">
+   <article>
+    <div class="article-header">
+     <div class="tag" id="articleCategory"></div>
+     <h1 id="articleTitle"></h1>
+     <div class="blog-meta" id="articleMeta"></div>
+    </div>
+    <img class="article-hero" id="articleImage" alt="">
+    <div class="article-body" id="articleBody"></div>
+    <div class="article-actions">
+     <a class="btn btn-gold" id="articleWhatsapp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Discuss Your Event</a>
+     <button class="btn" id="shareArticle"><i class="fa-solid fa-share-nodes"></i> Share Article</button>
+    </div>
+   </article>
+   <aside class="article-side">
+    <div class="side-box">
+     <h3>Plan With Iqra</h3>
+     <p>Need decoration for your Nikaah, Mehndi, birthday or special celebration? Contact us to discuss your ideas.</p>
+     <a href="contact.html" class="btn btn-gold">Contact Us</a>
+    </div>
+    <div class="side-box">
+     <h3>Our Services</h3>
+     <a href="services.html">Nikaah Stage Decor →</a><br>
+     <a href="services.html">Mehndi Stage Decor →</a><br>
+     <a href="services.html">Birthday Decoration →</a><br>
+     <a href="services.html">Room Decoration →</a><br>
+     <a href="services.html">Photography & Videography →</a>
+    </div>
+   </aside>
+  </div>
+ </div>
+</section>
+
+<section class="cta">
+ <div class="container">
+  <div class="tag" style="color:#e6c994">Let's Create Beautiful Memories</div>
+  <h2>Your Dream Celebration Starts Here.</h2>
+  <p>Inspired by an idea? Let's discuss your occasion and bring your vision to life.</p>
+  <a href="https://wa.me/923431544775?text=Hello%20Event%20Planner%20by%20Iqra%2C%20I%20would%20like%20to%20plan%20an%20event." class="btn btn-gold" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Book on WhatsApp</a>
+ </div>
+</section>
+
+</main>
+
+<footer>
+ <div class="container">
+  <div class="footer-grid">
+   <div>
+    <div class="footer-logo">Event Planner by Iqra<span>THE ART OF CELEBRATION</span></div>
+    <p>Beautifully styled moments and unforgettable celebrations. Event decoration and creative styling in Islamabad, Rawalpindi and Bhara Kahu.</p>
+    <div class="socials">
+     <a href="https://www.facebook.com/share/19YEWwUSfL/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+     <a href="https://www.instagram.com/event_planner_by_iqra/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+   </div>
+   <div>
+    <h3>Quick Links</h3>
+    <ul class="footer-links">
+     <li><a href="index.html">Home</a></li>
+     <li><a href="about.html">About Us</a></li>
+     <li><a href="services.html">Services</a></li>
+     <li><a href="blog.html">Blog</a></li>
+     <li><a href="contact.html">Contact</a></li>
+    </ul>
+   </div>
+   <div>
+    <h3>Get In Touch</h3>
+    <p><i class="fa-solid fa-location-dot"></i> Islamabad • Rawalpindi • Bhara Kahu</p>
+    <p><i class="fa-solid fa-phone"></i> <a href="tel:+923709909747">0370 9909747</a></p>
+    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:eventplannerbyiqra@gmail.com">eventplannerbyiqra@gmail.com</a></p>
+    <p><i class="fa-solid fa-globe"></i> eventplannerbyiqra.online</p>
+   </div>
+  </div>
+  <div class="footer-bottom">
+   <div>© <span id="year"></span> Event Planner by Iqra. All Rights Reserved.</div>
+   <div>Made with Love & Elegance ✦</div>
+  </div>
+ </div>
+</footer>
+
+<div class="floating">
+ <a href="mailto:eventplannerbyiqra@gmail.com" class="float-mail" aria-label="Email Us"><i class="fa-solid fa-envelope"></i></a>
+ <a href="https://wa.me/923431544775" class="float-wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Us"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+
+<script>
+const WA="923431544775";
+
+const articles=[
+{
+id:"nikaah-stage-decoration-ideas-islamabad",
+category:"Wedding",
+title:"10 Elegant Nikaah Stage Decoration Ideas for Islamabad Weddings",
+image:"https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85",
+excerpt:"Discover beautiful Nikaah stage themes, floral styling, lighting ideas and practical tips for a memorable ceremony.",
+minutes:7,
+content:`
+<p>A Nikaah is one of life's most meaningful celebrations. Whether you are hosting a small family gathering at home or a ceremony in an event venue, thoughtful decoration can create a warm, graceful atmosphere.</p>
+<p>In Islamabad and Rawalpindi, couples often look for a balance between traditional beauty and modern elegance. The key is choosing a theme that complements your venue, personal preferences and budget.</p>
+<h2>1. Classic Ivory and Gold</h2>
+<p>An ivory and champagne-gold palette is timeless. Use soft draping, cream floral arrangements and warm lighting to create an elegant backdrop. Gold accents can be introduced through decorative frames, lanterns or seating details.</p>
+<h2>2. Romantic Blush Pink Florals</h2>
+<p>Blush pink, soft peach and white flowers work beautifully for intimate Nikaah settings. A floral arch behind the seating area creates a lovely focal point without overwhelming the venue.</p>
+<h2>3. Minimalist White Nikaah Stage</h2>
+<p>Minimalist decoration can look luxurious when every detail is intentional. Consider a clean backdrop, elegant seating and carefully arranged flowers. This is especially suitable for smaller indoor spaces.</p>
+<h2>4. Traditional Floral Canopy</h2>
+<p>A floral canopy can add a traditional touch to the ceremony. Choose flowers and greenery that suit the season, and make sure the structure is secure and appropriate for the venue.</p>
+<h2>5. Warm Fairy Light Backdrop</h2>
+<p>Warm fairy lights behind sheer curtains can make an evening Nikaah feel magical. Avoid harsh lighting and ensure that electrical arrangements are safely installed.</p>
+<h2>6. Garden-Inspired Greenery</h2>
+<p>For outdoor ceremonies, greenery, neutral flowers and natural textures can blend beautifully with the surrounding landscape. Keep a weather backup plan, particularly during rainy or windy conditions.</p>
+<h2>7. Elegant Floral Pillars</h2>
+<p>Floral pillars on either side of the stage add height and balance. They can frame the seating area and create attractive photographs without requiring an elaborate full-stage installation.</p>
+<h2>8. Personalised Welcome Sign</h2>
+<p>A tasteful welcome sign with the couple's names and ceremony date adds a personal touch. Match the typography and colours to the main decoration theme.</p>
+<h2>9. Candle-Inspired Ambient Lighting</h2>
+<p>Battery-operated LED candles can create a warm atmosphere without the risks associated with open flames. Combine them with lanterns or floral arrangements for added depth.</p>
+<h2>10. Soft Pastel Colour Combinations</h2>
+<p>Powder blue, sage green, lavender and blush tones offer a fresh alternative to traditional gold and white. Use one main colour and one or two complementary shades for a cohesive result.</p>
+<blockquote>Beautiful Nikaah décor is not about adding more. It is about making every detail meaningful.</blockquote>
+<h2>How to Choose the Right Nikaah Decorator</h2>
+<ul>
+<li>Share your venue dimensions and photographs.</li>
+<li>Ask what is included in the decoration quotation.</li>
+<li>Discuss fresh versus artificial flowers.</li>
+<li>Confirm setup and removal timings.</li>
+<li>Explain your preferred colour palette and budget.</li>
+</ul>
+<h2>Planning a Nikaah in Islamabad?</h2>
+<p>Event Planner by Iqra offers Nikaah stage decoration inquiries in Islamabad, Rawalpindi and Bhara Kahu. Contact us with your event date, location and inspiration photos to discuss suitable styling options.</p>`
+},
+{
+id:"mehndi-stage-decoration-ideas",
+category:"Mehndi",
+title:"Beautiful Mehndi Stage Decoration Ideas for a Colourful Celebration",
+image:"https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1200&q=85",
+excerpt:"Explore vibrant Mehndi themes, traditional colours, floral backdrops and lighting ideas for joyful celebrations.",
+minutes:6,
+content:`
+<p>A Mehndi celebration is full of colour, music, family traditions and joyful memories. Your stage decoration should reflect that lively atmosphere while providing a comfortable setting for photographs and family gatherings.</p>
+<h2>Choose a Colourful Mehndi Theme</h2>
+<p>Yellow, orange, pink and green remain popular colours for Mehndi events. You can combine bright marigold-inspired florals with colourful cushions, traditional fabrics and decorative umbrellas.</p>
+<p>For a more contemporary appearance, try mustard yellow with emerald green, or fuchsia pink with warm gold accents. Keeping the palette consistent helps the entire setup look coordinated.</p>
+<h2>Traditional Floral Backdrops</h2>
+<p>Floral strings and hanging garlands are excellent ways to decorate a Mehndi stage. Marigold-inspired designs can create a festive feel, while mixed flowers add texture and variety.</p>
+<p>Consider using floral arrangements at different heights. This gives the backdrop depth and makes photographs more visually interesting.</p>
+<h2>Decorative Umbrellas and Traditional Props</h2>
+<p>Colourful umbrellas, decorative trays, patterned cushions and traditional seating can add personality. Select props that complement the space rather than overcrowding it.</p>
+<h2>Comfortable Stage Seating</h2>
+<p>Seating is one of the most important practical elements. The couple or guests may spend considerable time on the stage, so choose comfortable seating with sufficient room for photographs.</p>
+<h2>Lighting for Evening Mehndi Events</h2>
+<p>Warm decorative lighting works beautifully with vibrant Mehndi colours. Fairy lights, lanterns and soft stage lighting can enhance the atmosphere. Test the lighting before the event so faces remain clearly visible in photographs.</p>
+<h2>Mehndi Decoration for Small Homes</h2>
+<p>You do not need a large venue to create a beautiful Mehndi setup. A compact backdrop, coordinated floor cushions and a few statement floral arrangements can transform a living room or courtyard.</p>
+<h2>Outdoor Mehndi Decoration</h2>
+<p>Outdoor events offer opportunities for hanging décor, colourful pathways and illuminated seating areas. However, consider weather conditions, wind and secure installation of decorative structures.</p>
+<h2>Budget-Friendly Mehndi Styling Tips</h2>
+<ul>
+<li>Choose one strong focal point rather than decorating every wall.</li>
+<li>Reuse coordinated decorative elements across different areas.</li>
+<li>Use lighting to enhance simpler backdrops.</li>
+<li>Prioritise the stage and photography area.</li>
+<li>Share your budget before finalising a design.</li>
+</ul>
+<blockquote>A joyful Mehndi atmosphere comes from the perfect mix of colour, tradition and personal touches.</blockquote>
+<h2>Book Mehndi Decoration in Islamabad</h2>
+<p>Event Planner by Iqra offers Mehndi stage styling services for Islamabad, Rawalpindi and Bhara Kahu. Share your colour preferences, venue and event date to discuss a suitable design.</p>`
+},
+{
+id:"birthday-decoration-ideas-at-home",
+category:"Birthday",
+title:"12 Creative Birthday Decoration Ideas at Home",
+image:"https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1200&q=85",
+excerpt:"Make a birthday unforgettable with beautiful balloon arrangements, personalised backdrops and creative themes.",
+minutes:6,
+content:`
+<p>A birthday celebration at home can be just as memorable as a large party. With a thoughtful theme, coordinated decorations and a few personal details, an ordinary room can become a beautiful celebration space.</p>
+<h2>1. Elegant Balloon Arch</h2>
+<p>A balloon arch can frame the cake table or create a colourful photo corner. Choose two or three coordinating colours instead of mixing too many shades.</p>
+<h2>2. Personalised Name Backdrop</h2>
+<p>A backdrop featuring the birthday person's name makes the celebration feel personal and gives guests a lovely place to take photographs.</p>
+<h2>3. Pastel Birthday Theme</h2>
+<p>Soft pink, lilac, mint and cream colours create a gentle, modern look. Pastels work particularly well for intimate indoor celebrations.</p>
+<h2>4. Black and Gold Luxury Theme</h2>
+<p>For an elegant adult birthday, black and gold can create a sophisticated atmosphere. Add warm lighting and a clean cake display.</p>
+<h2>5. Floral Birthday Decoration</h2>
+<p>Flowers can make a birthday setting feel fresh and graceful. Combine floral arrangements with candles or decorative lights for a romantic look.</p>
+<h2>6. Fairy Light Photo Wall</h2>
+<p>A wall decorated with fairy lights and photographs creates a meaningful display of memories. Use lightweight clips and removable hooks suitable for the wall surface.</p>
+<h2>7. Surprise Bedroom Decoration</h2>
+<p>Decorate the bedroom with balloons, a thoughtful message and soft lighting. Keep pathways clear and avoid placing balloons near heaters or electrical equipment.</p>
+<h2>8. Minimalist White and Gold</h2>
+<p>White balloons, gold details and simple table styling create a refined look that works in both small and large rooms.</p>
+<h2>9. Garden Birthday Setup</h2>
+<p>If you have outdoor space, create a cosy seating area with decorative lights, table arrangements and a themed backdrop.</p>
+<h2>10. Kids' Character-Inspired Themes</h2>
+<p>Choose colours and decorative motifs inspired by the child's favourite interests. Use licensed materials when reproducing protected characters or branded artwork.</p>
+<h2>11. Milestone Birthday Styling</h2>
+<p>For milestone birthdays, highlight the age with tasteful number displays, photographs and personalised decorations.</p>
+<h2>12. Cake Table as a Focal Point</h2>
+<p>A beautifully styled cake table can bring the entire theme together. Add height using suitable display stands and keep the table stable and uncluttered.</p>
+<h2>How to Plan Your Birthday Decoration</h2>
+<ul>
+<li>Decide your colour palette.</li>
+<li>Measure the available space.</li>
+<li>Choose a backdrop and cake table location.</li>
+<li>Consider lighting and photography angles.</li>
+<li>Confirm setup timing and budget.</li>
+</ul>
+<blockquote>The best birthday decoration is the one that makes someone feel truly celebrated.</blockquote>
+<h2>Birthday Decor in Islamabad and Rawalpindi</h2>
+<p>Event Planner by Iqra offers birthday decoration services. Contact us with your preferred theme, location and celebration date to discuss your ideas.</p>`
+},
+{
+id:"romantic-room-decoration-ideas",
+category:"Decoration",
+title:"Romantic Room Decoration Ideas for Anniversaries and Surprises",
+image:"https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1200&q=85",
+excerpt:"Create an elegant surprise with romantic room styling, flowers, soft lighting and personalised details.",
+minutes:5,
+content:`
+<p>Romantic room decoration is a thoughtful way to celebrate an anniversary, birthday, engagement or another special moment. The most beautiful setups combine comfort, meaningful details and a carefully selected colour palette.</p>
+<h2>Start With a Romantic Colour Theme</h2>
+<p>Red and white are traditional romantic colours, but blush pink, champagne gold, ivory and burgundy can create an equally beautiful atmosphere.</p>
+<p>Choose colours that suit the room's existing furniture and lighting. A coordinated palette often looks more elegant than an overly colourful arrangement.</p>
+<h2>Use Warm Lighting</h2>
+<p>Warm fairy lights and battery-operated candles can create a soft glow. Avoid exposed wiring, overloaded sockets and placing decorations close to heat sources.</p>
+<h2>Floral Decoration Ideas</h2>
+<p>Flowers add a natural romantic touch. You can use small bouquets, floral arrangements or decorative petals. If using petals on bedding, consider allergies and whether the fabric may stain.</p>
+<h2>Personalised Messages</h2>
+<p>A simple message, framed photograph or handwritten note can make the room decoration much more meaningful. Choose one statement piece rather than filling every surface.</p>
+<h2>Balloon Decoration</h2>
+<p>Heart-shaped balloons or a small coordinated balloon arrangement can add a festive touch. Keep balloons away from ceiling fans, hot lights and walkways.</p>
+<h2>Anniversary Room Decoration</h2>
+<p>For anniversaries, consider using photographs from shared memories, a subtle floral display and a beautiful focal point near the bed or seating area.</p>
+<h2>Surprise Birthday Room Decoration</h2>
+<p>A birthday room setup can include a personalised backdrop, number balloons and a small cake display. Plan the installation time carefully so the surprise remains a surprise.</p>
+<h2>Common Mistakes to Avoid</h2>
+<ul>
+<li>Using too many competing colours.</li>
+<li>Overcrowding the room with decorations.</li>
+<li>Blocking doors or walkways.</li>
+<li>Using unsafe open flames.</li>
+<li>Ignoring the room's dimensions.</li>
+</ul>
+<blockquote>Romantic styling is most memorable when beauty and thoughtful details come together.</blockquote>
+<h2>Room Decoration Services in Islamabad</h2>
+<p>Event Planner by Iqra offers room decoration services for special occasions. Contact us to discuss your preferred colours, room size, location and date.</p>`
+},
+{
+id:"wedding-photography-tips",
+category:"Photography",
+title:"Wedding Photography Tips: How to Capture Your Special Day Beautifully",
+image:"https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=1200&q=85",
+excerpt:"Practical tips for wedding photography, natural poses, lighting, shot lists and memorable celebration photographs.",
+minutes:6,
+content:`
+<p>Wedding photographs preserve the moments that make a celebration meaningful. From emotional family interactions to beautiful stage portraits, a little planning can help create a more relaxed photography experience.</p>
+<h2>Discuss Your Photography Priorities</h2>
+<p>Before the event, share the moments that matter most to you. These may include the Nikaah ceremony, family portraits, décor details and candid interactions.</p>
+<h2>Create a Simple Shot List</h2>
+<p>A shot list helps organise important photographs without turning the celebration into a rigid photo session.</p>
+<ul>
+<li>Couple portraits.</li>
+<li>Immediate family photographs.</li>
+<li>Nikaah ceremony moments.</li>
+<li>Stage and venue decoration.</li>
+<li>Close-up details of flowers and accessories.</li>
+<li>Natural candid moments.</li>
+</ul>
+<h2>Make the Most of Natural Light</h2>
+<p>Soft daylight is often flattering for portraits. If your event takes place outdoors, discuss the timing and location of photographs in advance.</p>
+<h2>Plan Your Stage Lighting</h2>
+<p>Stage lighting has a major impact on photographs. Avoid extremely bright lights directed into guests' faces or coloured lights that distort natural skin tones.</p>
+<h2>Choose a Comfortable Photo Area</h2>
+<p>A clean backdrop, comfortable seating and sufficient space for the photographer can improve both posed and candid photographs.</p>
+<h2>Allow Time for Family Portraits</h2>
+<p>Family photographs often take longer than expected. Set aside a suitable time and ask a family member to help gather guests when needed.</p>
+<h2>Natural Poses Work Beautifully</h2>
+<p>Not every photograph needs a formal pose. Genuine smiles, conversations and small interactions often become the most cherished memories.</p>
+<h2>Coordinate Photography and Videography</h2>
+<p>If both services are booked, discuss their positions and timing so that they can work around one another during important moments.</p>
+<h2>Questions to Ask Before Booking</h2>
+<ul>
+<li>What coverage hours are included?</li>
+<li>How many photographers or videographers will attend?</li>
+<li>What editing and deliverables are included?</li>
+<li>What is the expected delivery timeline?</li>
+<li>Are travel charges applicable?</li>
+</ul>
+<blockquote>Beautiful photographs preserve not only how a celebration looked, but how it felt.</blockquote>
+<h2>Photography and Videography Inquiries</h2>
+<p>Event Planner by Iqra lists photography and videography among its services in Islamabad and Rawalpindi. Contact us to discuss coverage requirements and availability.</p>`
+},
+{
+id:"home-lighting-event-decoration",
+category:"Decoration",
+title:"Home Lighting Ideas for Weddings, Mehndi and Special Celebrations",
+image:"https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85",
+excerpt:"Discover elegant fairy lights, entrance lighting, warm decorative illumination and safe outdoor lighting tips.",
+minutes:5,
+content:`
+<p>Lighting can completely change the atmosphere of a home celebration. Whether you are decorating for a wedding, Mehndi, Nikaah or birthday, carefully selected lights can create warmth and highlight the most beautiful details.</p>
+<h2>Warm Fairy Lights</h2>
+<p>Warm-white fairy lights are a versatile option for walls, curtains and decorative backdrops. Their gentle glow works particularly well with floral arrangements and neutral fabrics.</p>
+<h2>Entrance Lighting</h2>
+<p>The entrance creates the first impression. A simple combination of decorative lights, flowers and a welcome sign can make guests feel warmly received.</p>
+<h2>Outdoor String Lighting</h2>
+<p>For courtyards and garden celebrations, outdoor-rated string lights can create an inviting atmosphere. Ensure they are installed securely and are suitable for outdoor conditions.</p>
+<h2>Lighting for Mehndi Events</h2>
+<p>Mehndi decorations often use bright colours. Warm lighting helps balance these colours and creates a festive atmosphere without overwhelming the stage.</p>
+<h2>Nikaah Stage Lighting</h2>
+<p>Soft, balanced lighting is ideal for Nikaah stages. Consider subtle illumination around the backdrop, with enough light for clear photography.</p>
+<h2>Birthday Lighting</h2>
+<p>For birthdays, fairy lights can frame a balloon backdrop or cake table. Use lighting to draw attention to the main celebration area.</p>
+<h2>Decorative Lanterns</h2>
+<p>Lanterns can complement traditional and contemporary themes. Battery-operated lighting offers a practical alternative to candles in busy celebration spaces.</p>
+<h2>Important Lighting Safety Tips</h2>
+<ul>
+<li>Use equipment suitable for indoor or outdoor use.</li>
+<li>Keep electrical connections away from water.</li>
+<li>Do not overload sockets or extension leads.</li>
+<li>Secure cables to prevent tripping hazards.</li>
+<li>Keep lighting away from flammable fabrics.</li>
+<li>Arrange professional installation where necessary.</li>
+</ul>
+<h2>Choose Lighting Based on Your Venue</h2>
+<p>Small rooms benefit from restrained lighting, while larger outdoor spaces may need several coordinated light sources. Consider the size, layout and existing illumination before selecting decorations.</p>
+<blockquote>Thoughtful lighting can turn an ordinary space into an extraordinary celebration.</blockquote>
+<h2>Home Lighting Services in Islamabad</h2>
+<p>Event Planner by Iqra offers decorative home lighting for special occasions in Islamabad, Rawalpindi and Bhara Kahu. Contact us to discuss your venue and requirements.</p>`
+}
+];
+
+const grid=document.getElementById("blogGrid");
+const searchInput=document.getElementById("blogSearch");
+let activeCategory="All";
+
+function renderArticles(){
+ const query=searchInput.value.toLowerCase().trim();
+ grid.innerHTML="";
+ const filtered=articles.filter(a=>
+  (activeCategory==="All"||a.category===activeCategory)&&
+  (a.title+" "+a.excerpt+" "+a.category).toLowerCase().includes(query)
+ );
+ filtered.forEach(a=>{
+  const card=document.createElement("article");
+  card.className="blog-card";
+  const imgBox=document.createElement("div");
+  imgBox.className="blog-image";
+  const img=document.createElement("img");
+  img.src=a.image;
+  img.alt=a.title;
+  img.loading="lazy";
+  imgBox.appendChild(img);
+
+  const content=document.createElement("div");
+  content.className="blog-content";
+  const category=document.createElement("div");
+  category.className="blog-category";
+  category.textContent=a.category.toUpperCase();
+  const heading=document.createElement("h2");
+  heading.textContent=a.title;
+  const meta=document.createElement("div");
+  meta.className="blog-meta";
+  meta.textContent=a.minutes+" min read";
+  const excerpt=document.createElement("p");
+  excerpt.textContent=a.excerpt;
+  const link=document.createElement("a");
+  link.className="read-more";
+  link.href="#"+a.id;
+  link.textContent="READ FULL ARTICLE →";
+  content.append(category,heading,meta,excerpt,link);
+  card.append(imgBox,content);
+  grid.appendChild(card);
+ });
+ document.getElementById("emptyMessage").style.display=filtered.length?"none":"block";
+}
+
+document.querySelectorAll(".filter-btn").forEach(btn=>{
+ btn.addEventListener("click",()=>{
+  document.querySelectorAll(".filter-btn").forEach(b=>b.classList.remove("active"));
+  btn.classList.add("active");
+  activeCategory=btn.dataset.category;
+  renderArticles();
+ });
+});
+searchInput.addEventListener("input",renderArticles);
+
+function showArticle(id){
+ const article=articles.find(a=>a.id===id);
+ if(!article){showListing();return;}
+ document.getElementById("blogListing").style.display="none";
+ document.getElementById("articleView").classList.add("open");
+ document.getElementById("articleCategory").textContent=article.category.toUpperCase()+" / EVENT INSPIRATION";
+ document.getElementById("articleTitle").textContent=article.title;
+ document.getElementById("articleMeta").textContent=article.minutes+" min read • Event Planner by Iqra";
+ const img=document.getElementById("articleImage");
+ img.src=article.image;
+ img.alt=article.title;
+ document.getElementById("articleBody").innerHTML=article.content;
+ document.getElementById("articleWhatsapp").href="https://wa.me/923431544775?text="+encodeURIComponent("Hello Event Planner by Iqra, I read your article: "+article.title+". I would like to discuss an event.");
+ document.title=article.title+" | Event Planner by Iqra";
+ window.scrollTo({top:0,behavior:"instant"});
+}
+
+function showListing(){
+ document.getElementById("blogListing").style.display="block";
+ document.getElementById("articleView").classList.remove("open");
+ document.title="Event Planning Blog | Event Planner by Iqra Islamabad";
+ window.scrollTo({top:0,behavior:"instant"});
+}
+
+function handleRoute(){
+ const id=decodeURIComponent(location.hash.slice(1));
+ if(articles.some(a=>a.id===id)){showArticle(id);}
+ else{showListing();}
+}
+
+document.getElementById("backBtn").addEventListener("click",()=>{
+ history.pushState(null,"",location.pathname);
+ showListing();
+});
+window.addEventListener("hashchange",handleRoute);
+window.addEventListener("popstate",handleRoute);
+
+document.getElementById("shareArticle").addEventListener("click",async()=>{
+ const url=location.href;
+ if(navigator.share){
+  try{await navigator.share({title:document.title,url});}catch(e){}
+ }else if(navigator.clipboard){
+  try{
+   await navigator.clipboard.writeText(url);
+   alert("Article link copied!");
+  }catch(e){
+   prompt("Copy article link:",url);
+  }
+ }else{
+  prompt("Copy article link:",url);
+ }
+});
+
+const menuBtn=document.getElementById("menuBtn");
+const navlinks=document.getElementById("navlinks");
+menuBtn.addEventListener("click",()=>{
+ const open=navlinks.classList.toggle("open");
+ menuBtn.setAttribute("aria-expanded",String(open));
+ menuBtn.querySelector("i").className=open?"fa-solid fa-xmark":"fa-solid fa-bars";
+});
+document.querySelectorAll(".navlinks a").forEach(link=>{
+ link.addEventListener("click",()=>{
+  navlinks.classList.remove("open");
+  menuBtn.setAttribute("aria-expanded","false");
+  menuBtn.querySelector("i").className="fa-solid fa-bars";
+ });
+});
+document.getElementById("year").textContent=new Date().getFullYear();
+renderArticles();
+handleRoute();
+</script>
+
+</body>
+</html>
+
