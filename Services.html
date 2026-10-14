@@ -1,1 +1,574 @@
-4
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#170e25">
+
+<title>Our Services | Event Planner by Iqra Islamabad</title>
+<meta name="description" content="Luxury event decoration in Islamabad, Rawalpindi and Bhara Kahu. Nikaah stage, Mehndi stage, birthday, room and car decor, photography, videography and home lighting by Event Planner by Iqra.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://eventplannerbyiqra.online/services.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+:root{
+--dark:#170e25;
+--purple:#382044;
+--gold:#d5b47b;
+--cream:#fcf8f3;
+--rose:#f3e6e8;
+--muted:#756e79;
+--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;color:var(--dark);background:var(--cream);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{width:100%;display:block;object-fit:cover}
+h1,h2,h3,h4{font-family:"Cormorant Garamond",serif}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+.container{width:min(1180px,90%);margin:auto}
+section{padding:95px 0}
+.tag{color:#a17e4c;font-size:11px;letter-spacing:4px;font-weight:700;text-transform:uppercase;margin-bottom:17px}
+.title{font-size:clamp(42px,5.5vw,70px);line-height:1.05;font-weight:600}
+.desc{font-size:14px;line-height:2;color:var(--muted);margin-top:20px}
+.center{text-align:center}
+.gold-line{width:65px;height:2px;background:var(--gold);margin:22px auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:11px;padding:16px 26px;font-size:11px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;border:1px solid var(--gold);transition:.3s}
+.btn-gold{background:var(--gold);color:var(--dark)}
+.btn-gold:hover{background:#ebd09d;transform:translateY(-3px)}
+.btn-dark{background:var(--dark);color:white;border-color:var(--dark)}
+.btn-dark:hover{background:var(--purple)}
+.btn-outline{background:transparent;color:white}
+.btn-outline:hover{background:var(--gold);color:var(--dark)}
+.topbar{background:var(--dark);color:#e9dccc;padding:11px 0;font-size:11px}
+.topbar-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.topbar i{color:var(--gold);margin-right:7px}
+header{position:sticky;top:0;z-index:1000;background:rgba(252,248,243,.98);box-shadow:0 5px 25px #0000000c}
+.nav{height:87px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.brand{display:flex;align-items:center;gap:12px}
+.monogram{width:54px;height:54px;border:1px solid var(--gold);display:grid;place-items:center;font:600 27px "Cormorant Garamond",serif;position:relative}
+.monogram:after{content:"";position:absolute;inset:4px;border:1px solid #d5b47b80}
+.brand-name{font:700 25px "Cormorant Garamond",serif;line-height:.9}
+.brand-name span{display:block;font:500 9px "DM Sans",sans-serif;letter-spacing:3px;color:#a48659;margin-top:9px}
+.navlinks{display:flex;align-items:center;gap:28px;list-style:none}
+.navlinks a{font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.navlinks a:hover,.navlinks .active{color:#b18a52}
+.nav-book{background:var(--purple);color:white!important;padding:13px 18px}
+.menu-btn{display:none;background:none;border:0;font-size:25px}
+.page-hero{min-height:470px;background:linear-gradient(90deg,#170e25ed,#382044a6),url("https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1800&q=85") center/cover;display:flex;align-items:center;text-align:center;color:white}
+.page-hero h1{font-size:clamp(65px,9vw,110px);font-weight:500;line-height:1}
+.page-hero h1 em{color:var(--gold)}
+.page-hero p{font-size:12px;letter-spacing:3px;color:#e8d3b1;margin-top:25px}
+.intro{background:white;text-align:center;padding:80px 0}
+.intro .desc{max-width:800px;margin:22px auto 0}
+.services{background:var(--cream)}
+.services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:35px;margin-top:55px}
+.service-card{background:white;box-shadow:0 12px 35px #1c0c2210;overflow:hidden;transition:.35s}
+.service-card:hover{transform:translateY(-7px);box-shadow:0 20px 40px #1c0c2220}
+.service-image{height:335px;position:relative;overflow:hidden}
+.service-image img{height:100%;transition:transform .6s}
+.service-card:hover img{transform:scale(1.07)}
+.service-number{position:absolute;top:20px;left:20px;background:var(--gold);color:var(--dark);padding:10px 15px;font-size:11px;letter-spacing:2px;font-weight:700}
+.service-content{padding:34px}
+.service-content .small{font-size:10px;letter-spacing:3px;color:#a48659;text-transform:uppercase}
+.service-content h3{font-size:40px;font-weight:600;margin:10px 0 15px}
+.service-content p{font-size:13px;line-height:2;color:var(--muted)}
+.service-features{list-style:none;margin:23px 0}
+.service-features li{font-size:12px;margin:11px 0;color:#5d5360}
+.service-features i{color:#b38c56;margin-right:10px}
+.statement{background:var(--dark);color:white;text-align:center}
+.statement h2{font-size:clamp(43px,6vw,76px);font-weight:400;max-width:900px;margin:auto}
+.statement h2 em{color:var(--gold)}
+.statement p{color:#d6c6d8;margin-top:25px;line-height:2}
+.why{background:#f1e9e5}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin-top:55px}
+.why-card{background:white;padding:45px 30px;text-align:center;border-bottom:3px solid var(--gold);transition:.3s}
+.why-card:hover{transform:translateY(-7px)}
+.why-card i{font-size:32px;color:#a98654;margin-bottom:22px}
+.why-card h3{font-size:30px;margin-bottom:12px}
+.why-card p{font-size:13px;line-height:1.9;color:var(--muted)}
+.process{background:white}
+.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:35px;margin-top:55px}
+.process-card{padding:30px;border-top:1px solid var(--gold)}
+.process-number{font:600 62px "Cormorant Garamond",serif;color:#b99565}
+.process-card h3{font-size:31px;margin:12px 0}
+.process-card p{font-size:13px;line-height:1.9;color:var(--muted)}
+.faq{background:var(--cream)}
+.faq-wrap{max-width:850px;margin:50px auto 0}
+.faq-item{background:white;margin-bottom:14px;border:1px solid #e9ddd4}
+.faq-item summary{padding:23px 25px;cursor:pointer;font-weight:600;font-size:14px;list-style:none;display:flex;justify-content:space-between;gap:15px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:after{content:"+";font-size:23px;color:#a98654}
+.faq-item[open] summary:after{content:"−"}
+.faq-item p{padding:0 25px 25px;font-size:13px;line-height:2;color:var(--muted)}
+.cta{background:linear-gradient(#170e25df,#170e25e8),url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=85") center/cover;text-align:center;color:white}
+.cta h2{font-size:clamp(46px,6vw,80px);margin:15px 0 23px}
+.cta p{color:#e3d8e6;line-height:2;margin-bottom:30px}
+footer{background:#140c1d;color:#d4c9d8;padding:75px 0 25px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1.5fr;gap:65px}
+.footer-logo{font:600 37px "Cormorant Garamond",serif;color:white}
+.footer-logo span{display:block;font:500 10px "DM Sans",sans-serif;letter-spacing:4px;color:var(--gold);margin-top:7px}
+footer p{font-size:13px;line-height:2;margin-top:20px}
+footer h3{font-size:26px;color:var(--gold);margin-bottom:23px}
+.footer-links{list-style:none}
+.footer-links li{margin:13px 0;font-size:13px}
+.footer-links a:hover{color:var(--gold)}
+.socials{display:flex;gap:12px;margin-top:20px}
+.socials a{width:40px;height:40px;border:1px solid #65516c;display:grid;place-items:center;color:var(--gold)}
+.socials a:hover{background:var(--gold);color:var(--dark)}
+.footer-bottom{border-top:1px solid #45364c;margin-top:55px;padding-top:25px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:11px;color:#aaa0ae}
+.floating{position:fixed;bottom:25px;right:22px;z-index:1100;display:flex;flex-direction:column;gap:12px}
+.floating a{width:55px;height:55px;border-radius:50%;display:grid;place-items:center;color:white;font-size:25px;box-shadow:0 5px 20px #0003;transition:.3s}
+.floating a:hover{transform:scale(1.1)}
+.float-wa{background:#25d366}
+.float-mail{background:var(--purple)}
+.reveal{opacity:0;transform:translateY(25px);transition:.7s}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:1000px){
+.navlinks{gap:15px}
+}
+@media(max-width:768px){
+section{padding:65px 0}
+.topbar-inner{justify-content:center;text-align:center}
+.nav{height:76px}
+.menu-btn{display:block}
+.navlinks{display:none;position:absolute;top:76px;left:0;width:100%;background:var(--cream);padding:25px 5%;flex-direction:column;align-items:stretch;box-shadow:0 15px 20px #0002}
+.navlinks.open{display:flex}
+.navlinks li{padding:8px 0}
+.services-grid{grid-template-columns:1fr}
+.service-image{height:300px}
+.why-grid,.process-grid{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr 1fr;gap:35px}
+.footer-grid>div:first-child{grid-column:span 2}
+}
+@media(max-width:480px){
+.brand-name{font-size:21px}
+.monogram{width:45px;height:45px}
+.page-hero{min-height:350px}
+.page-hero h1{font-size:64px}
+.service-image{height:250px}
+.service-content{padding:25px}
+.service-content h3{font-size:34px}
+.footer-grid{grid-template-columns:1fr}
+.footer-grid>div:first-child{grid-column:auto}
+}
+@media(prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+.reveal{opacity:1;transform:none;transition:none}
+}
+</style>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Service",
+ "name":"Event Decoration and Event Planning",
+ "description":"Nikaah, Mehndi, room, birthday and car decor, photography, videography and home lighting.",
+ "provider":{
+  "@type":"Organization",
+  "name":"Event Planner by Iqra",
+  "url":"https://eventplannerbyiqra.online/",
+  "telephone":"+923709909747"
+ },
+ "areaServed":[
+  {"@type":"Place","name":"Islamabad"},
+  {"@type":"Place","name":"Rawalpindi"},
+  {"@type":"Place","name":"Bhara Kahu"}
+ ],
+ "serviceType":"Event Decoration and Event Management"
+}
+</script>
+</head>
+
+<body>
+
+<div class="topbar">
+ <div class="container topbar-inner">
+  <div><i class="fa-solid fa-location-dot"></i> Islamabad • Rawalpindi • Bhara Kahu</div>
+  <div>
+   <a href="tel:+923709909747"><i class="fa-solid fa-phone"></i> 0370 9909747</a>
+   &nbsp; | &nbsp;
+   <a href="mailto:eventplannerbyiqra@gmail.com"><i class="fa-solid fa-envelope"></i> Email Us</a>
+  </div>
+ </div>
+</div>
+
+<header>
+ <div class="container nav">
+  <a href="index.html" class="brand">
+   <div class="monogram">EI</div>
+   <div class="brand-name">Event Planner <br>by Iqra<span>THE ART OF CELEBRATION</span></div>
+  </a>
+
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+   <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <ul class="navlinks" id="navlinks">
+   <li><a href="index.html">Home</a></li>
+   <li><a href="about.html">About</a></li>
+   <li><a href="services.html" class="active" aria-current="page">Services</a></li>
+   <li><a href="blog.html">Blog</a></li>
+   <li><a href="contact.html">Contact</a></li>
+   <li><a href="contact.html" class="nav-book">Book Your Event</a></li>
+  </ul>
+ </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+ <div class="container">
+  <div class="tag" style="color:#e6c994">What We Create</div>
+  <h1>Our <em>Services</em></h1>
+  <p>HOME / OUR SERVICES</p>
+ </div>
+</section>
+
+<section class="intro">
+ <div class="container reveal">
+  <div class="tag">The Art of Celebration</div>
+  <h2 class="title">Every Occasion Deserves<br><em>Something Extraordinary.</em></h2>
+  <div class="gold-line"></div>
+  <p class="desc">At Event Planner by Iqra, we bring creative styling, beautiful decoration and thoughtful details to your celebrations. From elegant Nikaah stages and vibrant Mehndi setups to intimate room decoration and birthday surprises, explore our services across Islamabad, Rawalpindi and Bhara Kahu.</p>
+ </div>
+</section>
+
+<section class="services">
+ <div class="container">
+  <div class="center reveal">
+   <div class="tag">Our Signature Collection</div>
+   <h2 class="title">Beautifully Curated Services</h2>
+   <div class="gold-line"></div>
+   <p class="desc">Find the perfect decoration and event services for your special day.</p>
+  </div>
+
+  <div class="services-grid" id="servicesGrid"></div>
+ </div>
+</section>
+
+<section class="statement">
+ <div class="container reveal">
+  <div class="tag" style="color:#e6c994">Our Philosophy</div>
+  <h2>Every Little Detail Makes<br>a <em>Beautiful Difference.</em></h2>
+  <p>Elegant styling. Creative ideas. Thoughtful celebrations.</p>
+  <a href="contact.html" class="btn btn-gold" style="margin-top:30px">Discuss Your Event</a>
+ </div>
+</section>
+
+<section class="why">
+ <div class="container">
+  <div class="center reveal">
+   <div class="tag">Our Approach</div>
+   <h2 class="title">Why Plan With Us?</h2>
+   <div class="gold-line"></div>
+   <p class="desc">We believe that thoughtful planning and personal touches make celebrations memorable.</p>
+  </div>
+
+  <div class="why-grid">
+   <div class="why-card reveal">
+    <i class="fa-regular fa-gem"></i>
+    <h3>Elegant Styling</h3>
+    <p>Beautiful colour combinations, refined decorations and creative styling ideas for special occasions.</p>
+   </div>
+
+   <div class="why-card reveal">
+    <i class="fa-solid fa-palette"></i>
+    <h3>Personalised Themes</h3>
+    <p>Discuss your favourite colours, theme and event vision to create a setting that reflects your taste.</p>
+   </div>
+
+   <div class="why-card reveal">
+    <i class="fa-regular fa-heart"></i>
+    <h3>Thoughtful Details</h3>
+    <p>From floral arrangements to lighting, we value the little touches that make an occasion feel special.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="process">
+ <div class="container">
+  <div class="center reveal">
+   <div class="tag">Your Celebration Journey</div>
+   <h2 class="title">How We Plan Your Event</h2>
+   <div class="gold-line"></div>
+  </div>
+
+  <div class="process-grid">
+   <div class="process-card reveal">
+    <div class="process-number">01</div>
+    <h3>Tell Us Your Ideas</h3>
+    <p>Share your event date, location, preferred decoration style and budget with us.</p>
+   </div>
+   <div class="process-card reveal">
+    <div class="process-number">02</div>
+    <h3>Discuss Your Design</h3>
+    <p>Explore suitable decoration concepts, arrangements and details for your occasion.</p>
+   </div>
+   <div class="process-card reveal">
+    <div class="process-number">03</div>
+    <h3>Enjoy Your Celebration</h3>
+    <p>Celebrate your special moments in a beautifully styled environment.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="faq">
+ <div class="container">
+  <div class="center reveal">
+   <div class="tag">Helpful Information</div>
+   <h2 class="title">Frequently Asked Questions</h2>
+   <div class="gold-line"></div>
+  </div>
+
+  <div class="faq-wrap">
+   <details class="faq-item">
+    <summary>Which areas do you serve?</summary>
+    <p>Event Planner by Iqra serves Islamabad, Rawalpindi and Bhara Kahu. Contact us to discuss your exact event location.</p>
+   </details>
+
+   <details class="faq-item">
+    <summary>Can I request a custom decoration theme?</summary>
+    <p>Yes, you can share your preferred colours, inspiration pictures, event type and decoration requirements to discuss a personalised setup.</p>
+   </details>
+
+   <details class="faq-item">
+    <summary>How can I book an event?</summary>
+    <p>You can contact us by phone, email or WhatsApp. Share your event date, location, service requirements and preferred style.</p>
+   </details>
+
+   <details class="faq-item">
+    <summary>Do you provide photography and videography?</summary>
+    <p>Photography and videography are included in our listed services. Please contact us to discuss coverage options and availability.</p>
+   </details>
+
+   <details class="faq-item">
+    <summary>How much does event decoration cost?</summary>
+    <p>Pricing depends on the event type, decoration requirements, venue, materials and design complexity. Contact us for a quotation.</p>
+   </details>
+  </div>
+ </div>
+</section>
+
+<section class="cta">
+ <div class="container reveal">
+  <div class="tag" style="color:#e6c994">Your Special Moment Awaits</div>
+  <h2>Let's Create Something Magical.</h2>
+  <p>Planning a Nikaah, Mehndi, birthday or surprise celebration?<br>Let's talk about your vision.</p>
+  <a href="https://wa.me/923431544775?text=Hello%20Event%20Planner%20by%20Iqra%2C%20I%20would%20like%20to%20book%20an%20event." target="_blank" rel="noopener noreferrer" class="btn btn-gold">
+   <i class="fa-brands fa-whatsapp"></i> Book on WhatsApp
+  </a>
+ </div>
+</section>
+
+</main>
+
+<footer>
+ <div class="container">
+  <div class="footer-grid">
+   <div>
+    <div class="footer-logo">Event Planner by Iqra<span>THE ART OF CELEBRATION</span></div>
+    <p>Beautifully styled moments and unforgettable celebrations. Bringing creative event decoration and thoughtful details to Islamabad, Rawalpindi and Bhara Kahu.</p>
+    <div class="socials">
+     <a href="https://www.facebook.com/share/19YEWwUSfL/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+     <a href="https://www.instagram.com/event_planner_by_iqra/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+   </div>
+
+   <div>
+    <h3>Quick Links</h3>
+    <ul class="footer-links">
+     <li><a href="index.html">Home</a></li>
+     <li><a href="about.html">About Us</a></li>
+     <li><a href="services.html">Our Services</a></li>
+     <li><a href="blog.html">Blog</a></li>
+     <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+   </div>
+
+   <div>
+    <h3>Get In Touch</h3>
+    <p><i class="fa-solid fa-location-dot"></i> Islamabad • Rawalpindi • Bhara Kahu</p>
+    <p><i class="fa-solid fa-phone"></i> <a href="tel:+923709909747">0370 9909747</a></p>
+    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:eventplannerbyiqra@gmail.com">eventplannerbyiqra@gmail.com</a></p>
+    <p><i class="fa-solid fa-globe"></i> eventplannerbyiqra.online</p>
+   </div>
+  </div>
+
+  <div class="footer-bottom">
+   <div>© <span id="year"></span> Event Planner by Iqra. All Rights Reserved.</div>
+   <div>Made with Love & Elegance ✦</div>
+  </div>
+ </div>
+</footer>
+
+<div class="floating">
+ <a href="mailto:eventplannerbyiqra@gmail.com" class="float-mail" aria-label="Email Us" title="Email Us"><i class="fa-solid fa-envelope"></i></a>
+ <a href="https://wa.me/923431544775?text=Hello%20Event%20Planner%20by%20Iqra" class="float-wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Us" title="WhatsApp Us"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+
+<script>
+const whatsappNumber="923431544775";
+
+const services=[
+{
+title:"Room Decor",
+subtitle:"ROMANTIC & SPECIAL OCCASIONS",
+image:"https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1000&q=85",
+description:"Transform your room into a beautifully styled space for anniversaries, surprises and memorable occasions. Explore romantic themes, decorative lighting and personalised details.",
+features:["Romantic Room Styling","Floral & Decorative Details","Special Occasion Themes"]
+},
+{
+title:"Nikaah Stage Decor",
+subtitle:"TIMELESS WEDDING ELEGANCE",
+image:"https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=85",
+description:"Celebrate your Nikaah with a graceful stage design featuring elegant colours, floral inspiration and beautiful decorative elements for a meaningful occasion.",
+features:["Elegant Stage Backdrops","Floral Styling Concepts","Personalised Colour Themes"]
+},
+{
+title:"Mehndi Stage Decor",
+subtitle:"COLOURFUL CELEBRATIONS",
+image:"https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1000&q=85",
+description:"Bring colour, joy and festive energy to your Mehndi with creative stage styling, vibrant themes and charming decoration arrangements.",
+features:["Vibrant Mehndi Themes","Festive Stage Styling","Colourful Decorative Details"]
+},
+{
+title:"Photography",
+subtitle:"CAPTURE BEAUTIFUL MEMORIES",
+image:"https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=1000&q=85",
+description:"Capture meaningful moments and the beautiful emotions of your celebrations through photography. Contact us to discuss your occasion and coverage requirements.",
+features:["Event Photography Inquiries","Special Occasion Coverage","Memorable Moments"]
+},
+{
+title:"Videography",
+subtitle:"YOUR STORY IN MOTION",
+image:"https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=1000&q=85",
+description:"Preserve the atmosphere and special highlights of your celebration with videography services suited to your event needs.",
+features:["Event Video Coverage","Celebration Highlights","Custom Coverage Discussions"]
+},
+{
+title:"Home Lighting",
+subtitle:"MAGICAL LIGHTING DESIGN",
+image:"https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1000&q=85",
+description:"Give your home a festive and welcoming glow with beautiful decorative lighting concepts for weddings, celebrations and family occasions.",
+features:["Decorative Home Lighting","Warm Celebration Ambience","Festive Lighting Concepts"]
+},
+{
+title:"Birthday Decor",
+subtitle:"CELEBRATE IN STYLE",
+image:"https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1000&q=85",
+description:"Make birthdays memorable with charming decoration ideas, colourful balloons, creative themes and personalised celebration settings.",
+features:["Birthday Theme Styling","Balloon Decoration Concepts","Surprise Celebration Setups"]
+},
+{
+title:"Car Decor",
+subtitle:"ELEGANT OCCASION STYLING",
+image:"https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=85",
+description:"Add an elegant finishing touch to your wedding or special occasion with beautiful car decoration concepts and floral styling.",
+features:["Wedding Car Decoration","Floral Styling Concepts","Special Occasion Car Decor"]
+}
+];
+
+const grid=document.getElementById("servicesGrid");
+
+services.forEach((service,index)=>{
+const card=document.createElement("article");
+card.className="service-card reveal";
+
+const imageBox=document.createElement("div");
+imageBox.className="service-image";
+
+const img=document.createElement("img");
+img.src=service.image;
+img.alt=service.title+" decoration inspiration";
+img.loading="lazy";
+
+const number=document.createElement("span");
+number.className="service-number";
+number.textContent=String(index+1).padStart(2,"0");
+
+imageBox.append(img,number);
+
+const content=document.createElement("div");
+content.className="service-content";
+
+const subtitle=document.createElement("div");
+subtitle.className="small";
+subtitle.textContent=service.subtitle;
+
+const heading=document.createElement("h3");
+heading.textContent=service.title;
+
+const description=document.createElement("p");
+description.textContent=service.description;
+
+const list=document.createElement("ul");
+list.className="service-features";
+
+service.features.forEach(feature=>{
+const li=document.createElement("li");
+const icon=document.createElement("i");
+icon.className="fa-solid fa-check";
+li.append(icon,document.createTextNode(feature));
+list.appendChild(li);
+});
+
+const link=document.createElement("a");
+link.className="btn btn-dark";
+link.href="https://wa.me/"+whatsappNumber+"?text="+encodeURIComponent("Hello Event Planner by Iqra, I would like to inquire about "+service.title+". Please share details and availability.");
+link.target="_blank";
+link.rel="noopener noreferrer";
+link.innerHTML='<i class="fa-brands fa-whatsapp"></i> Inquire on WhatsApp';
+
+content.append(subtitle,heading,description,list,link);
+card.append(imageBox,content);
+grid.appendChild(card);
+});
+
+const menuBtn=document.getElementById("menuBtn");
+const navlinks=document.getElementById("navlinks");
+
+menuBtn.addEventListener("click",()=>{
+const open=navlinks.classList.toggle("open");
+menuBtn.setAttribute("aria-expanded",String(open));
+menuBtn.querySelector("i").className=open?"fa-solid fa-xmark":"fa-solid fa-bars";
+});
+
+document.querySelectorAll(".navlinks a").forEach(link=>{
+link.addEventListener("click",()=>{
+navlinks.classList.remove("open");
+menuBtn.setAttribute("aria-expanded","false");
+menuBtn.querySelector("i").className="fa-solid fa-bars";
+});
+});
+
+document.getElementById("year").textContent=new Date().getFullYear();
+
+if("IntersectionObserver" in window){
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("visible");
+observer.unobserve(entry.target);
+}
+});
+},{threshold:.08});
+
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+}else{
+document.querySelectorAll(".reveal").forEach(el=>el.classList.add("visible"));
+}
+</script>
+
+</body>
+</html>
