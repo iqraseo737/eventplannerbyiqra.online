@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://eventplannerbyiqra.online/sitemap.xml
