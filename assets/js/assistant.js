@@ -1,6 +1,6 @@
 (function(){
 "use strict";
-var WA="923431544775",PH="0370 9909747",MAIL="eventplannerbyiqra@gmail.com";
+var WA="923709909747",PH="0370 9909747",MAIL="eventplannerbyiqra@gmail.com";
 var FB="https://www.facebook.com/share/19YEWwUSfL/",IG="https://www.instagram.com/event_planner_by_iqra/";
 function lang(){try{return localStorage.getItem("epi-lang")==="ur"?"ur":"en"}catch(e){return"en"}}
 function isUr(t){return /[؀-ۿ]/.test(t)}
