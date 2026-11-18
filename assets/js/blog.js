@@ -35,5 +35,5 @@ document.getElementById("share").addEventListener("click",function(){
  var d={title:document.title,url:location.href};
  if(navigator.share){navigator.share(d).catch(function(){})}else if(navigator.clipboard){navigator.clipboard.writeText(d.url);this.textContent="Link copied"}
 });
-render();route();
+render();route();if(window.__applyLang)window.__applyLang();
 })();
