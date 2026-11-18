@@ -384,3 +384,24 @@ html[lang="ur"] .check-teaser{border-left:1px solid var(--line);border-right:4px
 html[lang="ur"] a[href^="tel"],html[lang="ur"] a[href^="mailto"],html[lang="ur"] .f-contact a{direction:ltr;unicode-bidi:isolate;display:inline-block}
 html[lang="ur"] .hero h1,html[lang="ur"] .page-hero h1{line-height:1.45}
 html{overflow-x:clip}
+
+/* ---- photos update ---- */
+.svc-media img[src$="food-menu.webp"]{object-fit:contain;background:#0b0b0b}
+.hero-collage{position:absolute;z-index:2;right:max(4%,calc((100vw - 1200px)/2));top:50%;transform:translateY(-54%);width:min(36vw,470px);display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.hero-collage img{width:100%;height:100%;border-radius:200px 200px 14px 14px;border:2px solid rgba(201,164,92,.55);box-shadow:0 24px 50px rgba(0,0,0,.45)}
+.hero-collage .c1{grid-row:span 2;aspect-ratio:3/5}.hero-collage .c2,.hero-collage .c3{aspect-ratio:1/1.1;border-radius:14px 14px 100px 14px}
+.hero-collage .c3{border-radius:100px 14px 14px 14px}
+@media(min-width:1000px){.hero-content>*{max-width:600px}}
+@media(max-width:999px){.hero-collage{display:none}}
+.shot{cursor:zoom-in}
+.shot img{background:var(--sand)}
+.lb{position:fixed;inset:0;z-index:200;background:rgba(20,5,10,.94);display:none;align-items:center;justify-content:center;padding:24px}
+.lb.on{display:flex}
+.lb img{max-width:min(94vw,900px);max-height:84vh;width:auto;height:auto;border-radius:10px;border:1px solid rgba(201,164,92,.5)}
+.lb-cap{position:absolute;left:0;right:0;bottom:18px;text-align:center;color:var(--gold-light);font:600 20px var(--serif);padding:0 60px}
+.lb button{position:absolute;background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(201,164,92,.5);width:46px;height:46px;border-radius:50%;font-size:20px;cursor:pointer}
+.lb .x{top:18px;right:18px}.lb .pv{left:14px;top:50%}.lb .nx{right:14px;top:50%}
+.lb-cta{position:absolute;top:22px;left:50%;transform:translateX(-50%)}
+.note{max-width:760px;margin:26px auto 0;text-align:center}
+.filters .chip{padding:9px 16px}
+@media(min-width:1000px){.hero h1{font-size:clamp(46px,5vw,76px)}}
