@@ -131,3 +131,30 @@ add_action('admin_init', function () {
     }
     update_option('epb_blog_imported', 1);
 });
+
+// Second step: attach the original images and reading times to the imported posts.
+add_action('admin_init', function () {
+    if (get_option('epb_blog_imported_v2')) return;
+    if (!get_option('epb_blog_imported')) return;
+    $file = EPB_DIR . 'import-articles.json';
+    if (!file_exists($file)) return;
+    $list = json_decode(file_get_contents($file), true);
+    if (!is_array($list)) return;
+    if (function_exists('set_time_limit')) @set_time_limit(300);
+    require_once ABSPATH . 'wp-admin/includes/media.php';
+    require_once ABSPATH . 'wp-admin/includes/file.php';
+    require_once ABSPATH . 'wp-admin/includes/image.php';
+    $ok = true;
+    foreach ($list as $a) {
+        $p = get_page_by_path($a['id'], OBJECT, 'post');
+        if (!$p) continue;
+        if (!get_post_meta($p->ID, '_epb_minutes', true)) update_post_meta($p->ID, '_epb_minutes', (int) $a['minutes']);
+        if (has_post_thumbnail($p->ID) || empty($a['image'])) continue;
+        $tmp = download_url($a['image'], 60);
+        if (is_wp_error($tmp)) { $ok = false; continue; }
+        $att = media_handle_sideload(array('name' => $a['id'] . '.jpg', 'tmp_name' => $tmp), $p->ID, $a['title']);
+        if (is_wp_error($att)) { @unlink($tmp); $ok = false; continue; }
+        set_post_thumbnail($p->ID, $att);
+    }
+    if ($ok) update_option('epb_blog_imported_v2', 1);
+});
