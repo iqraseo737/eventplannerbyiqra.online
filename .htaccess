@@ -1,0 +1,5 @@
+# Used only when this repo is deployed as the WordPress plugin: keep the plain .html copies and git data private
+<FilesMatch "\.html$">
+Require all denied
+</FilesMatch>
+RedirectMatch 404 /\.git
