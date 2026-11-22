@@ -34,9 +34,9 @@ if ($slug === 'blog') {
         $items[] = array(
             'id' => $p->post_name,
             'category' => $cats ? $cats[0]->name : 'Blog',
-            'title' => get_the_title($p->ID),
+            'title' => html_entity_decode(wp_strip_all_tags(get_the_title($p->ID)), ENT_QUOTES, 'UTF-8'),
             'image' => get_the_post_thumbnail_url($p->ID, 'large') ?: EPB_URL . 'assets/img/logo-mark.svg',
-            'excerpt' => $p->post_excerpt ? wp_strip_all_tags($p->post_excerpt) : wp_trim_words($plain, 30),
+            'excerpt' => html_entity_decode($p->post_excerpt ? wp_strip_all_tags($p->post_excerpt) : wp_trim_words($plain, 30), ENT_QUOTES, 'UTF-8'),
             'minutes' => max(1, (int) ceil(str_word_count($plain) / 200)),
             'content' => apply_filters('the_content', $p->post_content),
         );
