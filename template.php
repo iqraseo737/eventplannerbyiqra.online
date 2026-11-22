@@ -41,9 +41,10 @@ if ($slug === 'blog') {
             'content' => apply_filters('the_content', $p->post_content),
         );
     }
-    if ($items) {
+    $imported = get_option('epb_blog_imported');
+    if ($items || $imported) {
         $tag = '<script src="assets/js/articles.js"></script>';
-        $inject = '<script>articles.unshift.apply(articles,' . wp_json_encode($items, JSON_HEX_TAG | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE) . ');</script>';
+        $inject = '<script>' . ($imported ? 'articles.length=0;' : '') . 'articles.unshift.apply(articles,' . wp_json_encode($items, JSON_HEX_TAG | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE) . ');</script>';
         $scripts = str_replace($tag, $tag . "\n" . $inject, $scripts);
     }
 }

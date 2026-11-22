@@ -97,3 +97,37 @@ add_action('admin_init', function () {
     }
     update_option('epb_seeded_git', 1);
 });
+
+// One-time import: the original design articles (import-articles.json) become normal WordPress posts,
+// so the blog can be fully managed from the WordPress panel.
+add_action('admin_init', function () {
+    if (get_option('epb_blog_imported')) return;
+    $file = EPB_DIR . 'import-articles.json';
+    if (!file_exists($file)) return;
+    $list = json_decode(file_get_contents($file), true);
+    if (!is_array($list)) return;
+    if (function_exists('set_time_limit')) @set_time_limit(300);
+    require_once ABSPATH . 'wp-admin/includes/media.php';
+    require_once ABSPATH . 'wp-admin/includes/file.php';
+    require_once ABSPATH . 'wp-admin/includes/image.php';
+    foreach ($list as $i => $a) {
+        if (get_page_by_path($a['id'], OBJECT, 'post')) continue;
+        $cat = wp_create_category($a['category']);
+        $when = time() - ($i * DAY_IN_SECONDS);
+        $pid = wp_insert_post(array(
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'post_name' => $a['id'],
+            'post_title' => $a['title'],
+            'post_excerpt' => $a['excerpt'],
+            'post_content' => $a['content'],
+            'post_category' => array($cat),
+            'post_date' => wp_date('Y-m-d H:i:s', $when),
+        ));
+        if ($pid && !is_wp_error($pid) && !empty($a['image'])) {
+            $img = media_sideload_image($a['image'], $pid, $a['title'], 'id');
+            if (!is_wp_error($img)) set_post_thumbnail($pid, $img);
+        }
+    }
+    update_option('epb_blog_imported', 1);
+});
