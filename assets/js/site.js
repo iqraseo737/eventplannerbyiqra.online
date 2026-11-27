@@ -2,6 +2,8 @@
 "use strict";
 var WA="923709909747";
 
+/* thumbnail lookup: local thumbs are inlined (thumbs.js) so they always render */
+function thumbOf(s){var k=(s.thumb||"").replace(/^assets\/img\/t\//,"").replace(/\.webp$/,"");return(window.TH&&window.TH[k])||s.thumb}
 /* shared services data */
 window.SERVICES=[
  {id:"nikaah",icon:"fa-ring",thumb:"assets/img/t/stage-02.webp",title:"Nikaah Stage Decor",sub:"Timeless wedding elegance",img:"assets/img/g/stage-02.webp",text:"A graceful Nikaah stage designed around your venue, colours and family traditions, with floral styling, draping and warm lighting that photographs beautifully.",list:["Floral backdrops, arches and pillars","Ivory, gold, pastel and custom palettes","Welcome signs and entrance styling"]},
@@ -25,7 +27,7 @@ function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp
 var grid=document.getElementById("servicesGrid");
 if(grid){
  grid.innerHTML=window.SERVICES.map(function(s){
-  return '<article class="card reveal'+(NEW_IDS.indexOf(s.id)>-1?' is-new':'')+'"><div class="ico ph"><img src="'+s.thumb+'" alt="" loading="lazy"'+(s.fb?' onerror="this.onerror=null;this.src=\''+s.fb+'\'"':'')+' width="80" height="80"><i class="fa-solid '+s.icon+'"></i></div><h3>'+esc(s.title)+'</h3><p>'+esc(s.sub+". "+s.text.split(". ")[0].replace(/\.$/,"")+".")+'</p><a class="more" href="services.html#'+s.id+'">Details <i class="fa-solid fa-arrow-right"></i></a></article>';
+  return '<article class="card reveal'+(NEW_IDS.indexOf(s.id)>-1?' is-new':'')+'"><div class="ico ph"><img src="'+thumbOf(s)+'" alt="" loading="lazy"'+(s.fb?' onerror="this.onerror=null;this.src=\''+s.fb+'\'"':'')+' width="80" height="80"><i class="fa-solid '+s.icon+'"></i></div><h3>'+esc(s.title)+'</h3><p>'+esc(s.sub+". "+s.text.split(". ")[0].replace(/\.$/,"")+".")+'</p><a class="more" href="services.html#'+s.id+'">Details <i class="fa-solid fa-arrow-right"></i></a></article>';
  }).join("");
 }
 
